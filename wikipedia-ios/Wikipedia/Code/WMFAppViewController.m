@@ -1196,10 +1196,17 @@ NSString *const WMFLanguageVariantAlertsLibraryVersion = @"WMFLanguageVariantAle
             [self setSelectedIndex:WMFAppTabTypePlaces];
             [self.navigationController popToRootViewControllerAnimated:animated];
             NSURL *articleURL = activity.wmf_linkURL;
+            NSData *coordinateData = activity.userInfo[@"WMFCoordinate"];
             if (articleURL) {
                 // For "View on a map" action to succeed, view mode has to be set to map.
                 [[self placesViewController] updateViewModeToMap];
                 [[self placesViewController] showArticleURL:articleURL];
+            } else if (coordinateData) {
+                CLLocationCoordinate2D coordinate;
+                [coordinateData getBytes:&coordinate length:sizeof(coordinate)];
+
+                [[self placesViewController] updateViewModeToMap];
+                [[self placesViewController] showCoordinate:coordinate];
             }
         } break;
         case WMFUserActivityTypeContent: {
