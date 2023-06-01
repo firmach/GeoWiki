@@ -32,6 +32,8 @@ struct LocationsResponse: Decodable {
 
     private struct Dummy: Decodable {}
 
+    init(locations: [Location]) { self.locations = locations }
+
 }
 
 
