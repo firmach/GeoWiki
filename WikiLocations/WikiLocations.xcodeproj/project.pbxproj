@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		A38DFB082A27D59000609A5B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A38DFB072A27D59000609A5B /* AppDelegate.swift */; };
 		A38DFB0A2A27D59000609A5B /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A38DFB092A27D59000609A5B /* SceneDelegate.swift */; };
-		A38DFB0C2A27D59000609A5B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A38DFB0B2A27D59000609A5B /* ViewController.swift */; };
 		A38DFB112A27D59100609A5B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A38DFB102A27D59100609A5B /* Assets.xcassets */; };
 		A38DFB142A27D59100609A5B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A38DFB122A27D59100609A5B /* LaunchScreen.storyboard */; };
 		A38DFB1F2A27D59100609A5B /* WikiLocationsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A38DFB1E2A27D59100609A5B /* WikiLocationsTests.swift */; };
@@ -20,6 +19,13 @@
 		A38DFB472A27D80A00609A5B /* URLRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = A38DFB462A27D80A00609A5B /* URLRequest.swift */; };
 		A38DFB492A27D83800609A5B /* APIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = A38DFB482A27D83800609A5B /* APIClient.swift */; };
 		A38DFB4B2A27D86300609A5B /* LocationsService.swift in Sources */ = {isa = PBXBuildFile; fileRef = A38DFB4A2A27D86300609A5B /* LocationsService.swift */; };
+		A38DFB502A27D98400609A5B /* LocationsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A38DFB4F2A27D98400609A5B /* LocationsViewController.swift */; };
+		A38DFB522A27D99300609A5B /* LocationsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A38DFB512A27D99300609A5B /* LocationsViewModel.swift */; };
+		A38DFB552A27DA0100609A5B /* TransientOverlayDisplayable.swift in Sources */ = {isa = PBXBuildFile; fileRef = A38DFB542A27DA0100609A5B /* TransientOverlayDisplayable.swift */; };
+		A38DFB572A27DA1900609A5B /* ErrorToastView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A38DFB562A27DA1900609A5B /* ErrorToastView.swift */; };
+		A38DFB592A27DA2F00609A5B /* LoadingCircleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A38DFB582A27DA2F00609A5B /* LoadingCircleView.swift */; };
+		A38DFB5B2A27DA5C00609A5B /* LocationCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A38DFB5A2A27DA5C00609A5B /* LocationCell.swift */; };
+		A38DFB5E2A27DAAA00609A5B /* WikiUrl.swift in Sources */ = {isa = PBXBuildFile; fileRef = A38DFB5D2A27DAAA00609A5B /* WikiUrl.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,7 +42,6 @@
 		A38DFB042A27D59000609A5B /* WikiLocations.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WikiLocations.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A38DFB072A27D59000609A5B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A38DFB092A27D59000609A5B /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		A38DFB0B2A27D59000609A5B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		A38DFB102A27D59100609A5B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A38DFB132A27D59100609A5B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A38DFB152A27D59100609A5B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -49,6 +54,13 @@
 		A38DFB462A27D80A00609A5B /* URLRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLRequest.swift; sourceTree = "<group>"; };
 		A38DFB482A27D83800609A5B /* APIClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIClient.swift; sourceTree = "<group>"; };
 		A38DFB4A2A27D86300609A5B /* LocationsService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationsService.swift; sourceTree = "<group>"; };
+		A38DFB4F2A27D98400609A5B /* LocationsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationsViewController.swift; sourceTree = "<group>"; };
+		A38DFB512A27D99300609A5B /* LocationsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationsViewModel.swift; sourceTree = "<group>"; };
+		A38DFB542A27DA0100609A5B /* TransientOverlayDisplayable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransientOverlayDisplayable.swift; sourceTree = "<group>"; };
+		A38DFB562A27DA1900609A5B /* ErrorToastView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorToastView.swift; sourceTree = "<group>"; };
+		A38DFB582A27DA2F00609A5B /* LoadingCircleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingCircleView.swift; sourceTree = "<group>"; };
+		A38DFB5A2A27DA5C00609A5B /* LocationCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationCell.swift; sourceTree = "<group>"; };
+		A38DFB5D2A27DAAA00609A5B /* WikiUrl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WikiUrl.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -91,9 +103,11 @@
 			isa = PBXGroup;
 			children = (
 				A38DFB3A2A27D72D00609A5B /* Network */,
+				A38DFB4D2A27D96C00609A5B /* Screen */,
+				A38DFB532A27D9EA00609A5B /* View */,
+				A38DFB5C2A27DA9800609A5B /* Helper */,
 				A38DFB072A27D59000609A5B /* AppDelegate.swift */,
 				A38DFB092A27D59000609A5B /* SceneDelegate.swift */,
-				A38DFB0B2A27D59000609A5B /* ViewController.swift */,
 				A38DFB102A27D59100609A5B /* Assets.xcassets */,
 				A38DFB122A27D59100609A5B /* LaunchScreen.storyboard */,
 				A38DFB152A27D59100609A5B /* Info.plist */,
@@ -153,6 +167,42 @@
 				A38DFB4A2A27D86300609A5B /* LocationsService.swift */,
 			);
 			path = Service;
+			sourceTree = "<group>";
+		};
+		A38DFB4D2A27D96C00609A5B /* Screen */ = {
+			isa = PBXGroup;
+			children = (
+				A38DFB4E2A27D97400609A5B /* Locations */,
+			);
+			path = Screen;
+			sourceTree = "<group>";
+		};
+		A38DFB4E2A27D97400609A5B /* Locations */ = {
+			isa = PBXGroup;
+			children = (
+				A38DFB4F2A27D98400609A5B /* LocationsViewController.swift */,
+				A38DFB512A27D99300609A5B /* LocationsViewModel.swift */,
+			);
+			path = Locations;
+			sourceTree = "<group>";
+		};
+		A38DFB532A27D9EA00609A5B /* View */ = {
+			isa = PBXGroup;
+			children = (
+				A38DFB542A27DA0100609A5B /* TransientOverlayDisplayable.swift */,
+				A38DFB562A27DA1900609A5B /* ErrorToastView.swift */,
+				A38DFB582A27DA2F00609A5B /* LoadingCircleView.swift */,
+				A38DFB5A2A27DA5C00609A5B /* LocationCell.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		A38DFB5C2A27DA9800609A5B /* Helper */ = {
+			isa = PBXGroup;
+			children = (
+				A38DFB5D2A27DAAA00609A5B /* WikiUrl.swift */,
+			);
+			path = Helper;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -257,14 +307,20 @@
 			files = (
 				A38DFB4B2A27D86300609A5B /* LocationsService.swift in Sources */,
 				A38DFB452A27D7FA00609A5B /* URLComponents.swift in Sources */,
-				A38DFB0C2A27D59000609A5B /* ViewController.swift in Sources */,
 				A38DFB3D2A27D76800609A5B /* LocationsResponse.swift in Sources */,
+				A38DFB502A27D98400609A5B /* LocationsViewController.swift in Sources */,
+				A38DFB552A27DA0100609A5B /* TransientOverlayDisplayable.swift in Sources */,
 				A38DFB082A27D59000609A5B /* AppDelegate.swift in Sources */,
+				A38DFB5B2A27DA5C00609A5B /* LocationCell.swift in Sources */,
 				A38DFB0A2A27D59000609A5B /* SceneDelegate.swift in Sources */,
+				A38DFB572A27DA1900609A5B /* ErrorToastView.swift in Sources */,
+				A38DFB522A27D99300609A5B /* LocationsViewModel.swift in Sources */,
+				A38DFB592A27DA2F00609A5B /* LoadingCircleView.swift in Sources */,
 				A38DFB402A27D7AA00609A5B /* Endpoint.swift in Sources */,
 				A38DFB422A27D7BC00609A5B /* LocationsEndpoint.swift in Sources */,
 				A38DFB472A27D80A00609A5B /* URLRequest.swift in Sources */,
 				A38DFB492A27D83800609A5B /* APIClient.swift in Sources */,
+				A38DFB5E2A27DAAA00609A5B /* WikiUrl.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
