@@ -226,7 +226,11 @@ private extension LocationsViewController {
     }
 
     @objc func showMapTapped() {
-        // TODO: implement map screen
+        // In real world project it would be better to move this code out of VC
+        // using Coordinator patter for example
+        let customLocationViewController = CustomLocationViewController()
+        let navigationController = UINavigationController(rootViewController: customLocationViewController)
+        present(navigationController, animated: true)
     }
 
 }

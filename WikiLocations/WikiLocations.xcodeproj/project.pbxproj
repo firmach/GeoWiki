@@ -26,6 +26,7 @@
 		A38DFB592A27DA2F00609A5B /* LoadingCircleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A38DFB582A27DA2F00609A5B /* LoadingCircleView.swift */; };
 		A38DFB5B2A27DA5C00609A5B /* LocationCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A38DFB5A2A27DA5C00609A5B /* LocationCell.swift */; };
 		A38DFB5E2A27DAAA00609A5B /* WikiUrl.swift in Sources */ = {isa = PBXBuildFile; fileRef = A38DFB5D2A27DAAA00609A5B /* WikiUrl.swift */; };
+		A38DFB612A288E6100609A5B /* CustomLocationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A38DFB602A288E6100609A5B /* CustomLocationViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -61,6 +62,7 @@
 		A38DFB582A27DA2F00609A5B /* LoadingCircleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingCircleView.swift; sourceTree = "<group>"; };
 		A38DFB5A2A27DA5C00609A5B /* LocationCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationCell.swift; sourceTree = "<group>"; };
 		A38DFB5D2A27DAAA00609A5B /* WikiUrl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WikiUrl.swift; sourceTree = "<group>"; };
+		A38DFB602A288E6100609A5B /* CustomLocationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomLocationViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -172,6 +174,7 @@
 		A38DFB4D2A27D96C00609A5B /* Screen */ = {
 			isa = PBXGroup;
 			children = (
+				A38DFB5F2A288E4B00609A5B /* Custom Location */,
 				A38DFB4E2A27D97400609A5B /* Locations */,
 			);
 			path = Screen;
@@ -203,6 +206,14 @@
 				A38DFB5D2A27DAAA00609A5B /* WikiUrl.swift */,
 			);
 			path = Helper;
+			sourceTree = "<group>";
+		};
+		A38DFB5F2A288E4B00609A5B /* Custom Location */ = {
+			isa = PBXGroup;
+			children = (
+				A38DFB602A288E6100609A5B /* CustomLocationViewController.swift */,
+			);
+			path = "Custom Location";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -313,6 +324,7 @@
 				A38DFB082A27D59000609A5B /* AppDelegate.swift in Sources */,
 				A38DFB5B2A27DA5C00609A5B /* LocationCell.swift in Sources */,
 				A38DFB0A2A27D59000609A5B /* SceneDelegate.swift in Sources */,
+				A38DFB612A288E6100609A5B /* CustomLocationViewController.swift in Sources */,
 				A38DFB572A27DA1900609A5B /* ErrorToastView.swift in Sources */,
 				A38DFB522A27D99300609A5B /* LocationsViewModel.swift in Sources */,
 				A38DFB592A27DA2F00609A5B /* LoadingCircleView.swift in Sources */,
