@@ -27,6 +27,8 @@
 		A38DFB5B2A27DA5C00609A5B /* LocationCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A38DFB5A2A27DA5C00609A5B /* LocationCell.swift */; };
 		A38DFB5E2A27DAAA00609A5B /* WikiUrl.swift in Sources */ = {isa = PBXBuildFile; fileRef = A38DFB5D2A27DAAA00609A5B /* WikiUrl.swift */; };
 		A38DFB612A288E6100609A5B /* CustomLocationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A38DFB602A288E6100609A5B /* CustomLocationViewController.swift */; };
+		A38DFB632A28A1BC00609A5B /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = A38DFB622A28A1BC00609A5B /* Coordinator.swift */; };
+		A38DFB652A28A1D500609A5B /* MainCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = A38DFB642A28A1D500609A5B /* MainCoordinator.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -63,6 +65,8 @@
 		A38DFB5A2A27DA5C00609A5B /* LocationCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationCell.swift; sourceTree = "<group>"; };
 		A38DFB5D2A27DAAA00609A5B /* WikiUrl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WikiUrl.swift; sourceTree = "<group>"; };
 		A38DFB602A288E6100609A5B /* CustomLocationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomLocationViewController.swift; sourceTree = "<group>"; };
+		A38DFB622A28A1BC00609A5B /* Coordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
+		A38DFB642A28A1D500609A5B /* MainCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainCoordinator.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -176,6 +180,8 @@
 			children = (
 				A38DFB5F2A288E4B00609A5B /* Custom Location */,
 				A38DFB4E2A27D97400609A5B /* Locations */,
+				A38DFB622A28A1BC00609A5B /* Coordinator.swift */,
+				A38DFB642A28A1D500609A5B /* MainCoordinator.swift */,
 			);
 			path = Screen;
 			sourceTree = "<group>";
@@ -324,11 +330,13 @@
 				A38DFB082A27D59000609A5B /* AppDelegate.swift in Sources */,
 				A38DFB5B2A27DA5C00609A5B /* LocationCell.swift in Sources */,
 				A38DFB0A2A27D59000609A5B /* SceneDelegate.swift in Sources */,
+				A38DFB632A28A1BC00609A5B /* Coordinator.swift in Sources */,
 				A38DFB612A288E6100609A5B /* CustomLocationViewController.swift in Sources */,
 				A38DFB572A27DA1900609A5B /* ErrorToastView.swift in Sources */,
 				A38DFB522A27D99300609A5B /* LocationsViewModel.swift in Sources */,
 				A38DFB592A27DA2F00609A5B /* LoadingCircleView.swift in Sources */,
 				A38DFB402A27D7AA00609A5B /* Endpoint.swift in Sources */,
+				A38DFB652A28A1D500609A5B /* MainCoordinator.swift in Sources */,
 				A38DFB422A27D7BC00609A5B /* LocationsEndpoint.swift in Sources */,
 				A38DFB472A27D80A00609A5B /* URLRequest.swift in Sources */,
 				A38DFB492A27D83800609A5B /* APIClient.swift in Sources */,

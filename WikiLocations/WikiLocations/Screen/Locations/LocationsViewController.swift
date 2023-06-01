@@ -7,8 +7,7 @@
 
 import UIKit
 import Combine
-import CoreLocation
-
+import CoreLocation.CLLocation
 
 
 @MainActor
@@ -24,6 +23,7 @@ final class LocationsViewController: UICollectionViewController, TransientOverla
 
     // MARK: - Private properties
 
+    private let coordinator: MainCoordinator
     private let viewModel: LocationsViewModel
     private lazy var dataSource = makeDataSource()
     private var cancellables = Set<AnyCancellable>()
@@ -34,7 +34,11 @@ final class LocationsViewController: UICollectionViewController, TransientOverla
 
     // MARK: - Initialization
 
-    init(viewModel: LocationsViewModel) {
+    init(
+        coordinator: MainCoordinator,
+        viewModel: LocationsViewModel
+    ) {
+        self.coordinator = coordinator
         self.viewModel = viewModel
         super.init(collectionViewLayout: UICollectionViewLayout())
     }
@@ -67,11 +71,7 @@ final class LocationsViewController: UICollectionViewController, TransientOverla
     ) {
         let location = viewModel.locations[indexPath.row]
         let coordinate = CLLocationCoordinate2D(latitude: location.lat, longitude: location.long)
-
-        if let url = WikiUrl(coordinate: coordinate),
-           UIApplication.shared.canOpenURL(url) {
-            UIApplication.shared.open(url, options: [:], completionHandler: nil)
-        }
+        coordinator.showWiki(at: coordinate)
     }
 
 }
@@ -225,12 +225,9 @@ private extension LocationsViewController {
         }
     }
 
-    @objc func showMapTapped() {
-        // In real world project it would be better to move this code out of VC
-        // using Coordinator patter for example
-        let customLocationViewController = CustomLocationViewController()
-        let navigationController = UINavigationController(rootViewController: customLocationViewController)
-        present(navigationController, animated: true)
-    }
+    
+    // MARK: - Actions
+
+    @objc func showMapTapped() { coordinator.presentSelectCustomLocation() }
 
 }

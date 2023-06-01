@@ -14,6 +14,19 @@ final class CustomLocationViewController: UIViewController {
     // MARK: - Private properties
 
     private let mapView = MKMapView()
+    private let coordinator: MainCoordinator
+
+
+    // MARK: - Initialization
+
+    init(coordinator: MainCoordinator) {
+        self.coordinator = coordinator
+        super.init(nibName: nil, bundle: nil)
+    }
+
+    required init?(coder: NSCoder) {
+        fatalError("init(coder:) has not been implemented")
+    }
 
 
     // MARK: - Lifecycle
@@ -121,14 +134,8 @@ extension CustomLocationViewController: MKMapViewDelegate {
         annotationView view: MKAnnotationView,
         calloutAccessoryControlTapped control: UIControl
     ) {
-        guard let coordinate = view.annotation?.coordinate,
-              let url = WikiUrl(coordinate: coordinate),
-              UIApplication.shared.canOpenURL(url)
-        else {
-            return
-        }
-
-        UIApplication.shared.open(url, options: [:], completionHandler: nil)
+        guard let coordinate = view.annotation?.coordinate else { return }
+        coordinator.showWiki(at: coordinate)
     }
 
 }
